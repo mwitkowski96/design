@@ -1,6 +1,7 @@
 /* Global */
 
 $color-main: #FFFFFF;
+$color-desc: #808080;
 $color-decoration: #fdc04e;
 
 *, *::before, *::after { box-sizing: border-box;
@@ -20,22 +21,29 @@ padding-top: 108px;
 
 .container{
 max-width: 1140px;
-margin: 0 auto;
+margin-top: 250px;
+margin-bottom: 250px;
 padding: 0 20px;
+
+text-align: center;
 }
 
 /* Splash */
 
 .splash{
-height: 600px;
+display: flex;
+min-height: 600px;
 position: relative;
 background-image: url('https://images.pexels.com/photos/461428/pexels-photo-461428.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260');
 background-position: center center;
 background-size: cover;
 background-attachment: fixed;
+text-align: center;
+position: relative;
 }
 
 .splash-inner{
+margin: auto;
 position: absolute;
 width: 100%;
 top: 50%;
@@ -60,14 +68,15 @@ margin: 0 0;
 
 .button{
 background-color: $color-decoration;
-border-radius: 4px;
+border-radius: 5px;
 color: $color-main;
-padding: 15px 32px;
+padding: 20px 50px;
 text-align: center;
 text-decoration: none;
 display: inline-block;
+min-width: 160px;
 font-size: 20px;
-margin: 32px 2px;
+margin: 24px auto 0 auto;
 cursor: pointer;
 text-transform: uppercase;
 font-weight: bold;
@@ -77,6 +86,11 @@ font-weight: bold;
 
 nav{
 padding: 12px 0;
+}
+
+.nav-inner{
+position:absolute;
+right:50px;
 }
 
 .navigation ul {
@@ -92,5 +106,86 @@ margin-right: 36px;
 
 a{
 text-decoration: none;
+text-transform: uppercase;
+color: $color-main;
+font-size: 20px;
+}
+}
+
+/* Services */
+
+.services-title{
+font-size: 60px;
+color: #000000;
+text-transform: uppercase;
+font-weight: bold;
+margin: 0 0;
+padding: 0 0;
+text-align: center;
+position: relative;
+}
+
+.services-subtitle{
+color: $color-desc;
+margin: 0 0;
+padding: 0 0;
+}
+
+
+.row{
+margin-top: 110px;
+margin-left: auto;
+margin-right: auto;
+padding: 0 0;
+position: absolute;
+text-align: center;
+}
+
+.icon{
+position: relative;
+display:inline-block;
+font-size: 60px;
+border: solid 4px $color-decoration;
+border-radius:84px;
+color: $color-decoration;
+width: 105px;
+height: 105px;
+}
+
+.subtitle{
+margin-top: 30px;
+}
+
+/ * End - Services */
+
+/* Start - Portfolio */
+
+.image{
+ width: 300px;
+ height: 300px; 
+ object-fit:cover;
+ overflow:hidden;
+ margin: 100px;
+ postion: relative;
+}
+
+/* End - Portoflio */
+
+
+footer ul{
+margin: 0 0;
+padding: 0 0;
+listy-style-type: none;
+
+
+li{
+position: relative;
+display: inline-block;
+margin-right: 36px;
+}
+
+a{
+text-decoration: none;
+font-size 20px;
 }
 }

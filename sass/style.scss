@@ -1,10 +1,12 @@
 /* Global */
 
+$color-main: #FFFFFF;
+$color-decoration: #fdc04e;
+
 *, *::before, *::after { box-sizing: border-box;
 }
 
 body{
-margin: 0;
 text-align: center;
 background: #fff;
 color: #3d3d3d;
@@ -22,5 +24,51 @@ margin: 0 auto;
 padding: 0 20px;
 }
 
+/* Splash */
 
+.splash{
+height: 600px;
+position: relative;
+background-image: url('https://images.pexels.com/photos/461428/pexels-photo-461428.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260');
+background-position: center center;
+background-size: cover;
+background-attachment: fixed;
+}
 
+.splash-inner{
+position: absolute;
+width: 100%;
+top: 50%;
+left: 50%;
+transform: translate(-50%,-50%);
+}
+
+.page-title{
+color: $color-main;
+font-size: 40px;
+font-style: italic;
+margin: 30px 0 0 0;
+}
+
+.page-subtitle{
+color: $color-main;
+font-size: 70px;
+font-weight: bold;
+text-transform: uppercase;
+margin: 0 0;
+}
+
+.button{
+background-color: $color-decoration;
+border-radius: 4px;
+color: $color-main;
+padding: 15px 32px;
+text-align: center;
+text-decoration: none;
+display: inline-block;
+font-size: 20px;
+margin: 32px 2px;
+cursor: pointer;
+text-transform: uppercase;
+font-weight: bold;
+}

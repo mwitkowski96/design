@@ -72,3 +72,25 @@ cursor: pointer;
 text-transform: uppercase;
 font-weight: bold;
 }
+
+/* Naviagation */
+
+nav{
+padding: 12px 0;
+}
+
+.navigation ul {
+padding: 0 0;
+margin: 0 0;
+list-style-type: none;
+
+li{
+position: relavite;
+display: inline-block;
+margin-right: 36px;
+}
+
+a{
+text-decoration: none;
+}
+}

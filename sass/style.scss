@@ -183,3 +183,35 @@ footer ul {
     font-size: 20px;
   }
 }
+
+footer i{
+  position: relative;
+  bottom: 20px;
+  color:white;
+  font-size: 20px;
+
+  .col-md-4{
+    margin: 0 0;
+  }
+}
+
+.circle-icon {
+  background: #0a051d;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 100px;
+  vertical-align: middle;
+  padding: 21px;
+}
+
+
+/*start - Media*/
+
+@media (max-width: 767px) {
+  .col-md-4 {
+    margin-top: 100px;
+  }
+
+}
